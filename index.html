@@ -1,0 +1,144 @@
+    <!DOCTYPE html>
+    <html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                
+                margin: 0px;
+                /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
+                height: 100vh;
+                background-color: rgba(193, 215, 217, 0.86)
+            
+            }
+            /* *{
+            
+            border: 1px solid rgb(239, 242, 242);
+            } */
+            .yinying{
+                box-shadow:rgb(65, 15, 17)
+            }
+            .flex{
+                /* 按行分布，排成一行 */
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .baiSe{
+                background-color: hsla(273, 69%, 63%, 0.364);
+            }
+            .qianbaiSe{
+                background-color: hsla(276, 24%, 41%, 0.427);
+            }
+            .flex1{
+                flex:1;
+            }
+            .column{
+                flex-direction: column;
+            }
+            .mg8{
+                margin: 6px;
+                
+                
+            }
+            .mgr8{
+                margin: 4px;
+
+               /* border: 1px solid rgb(27, 162, 162); */
+            }
+            .mgt8{
+                margin: 6px;
+               
+            }
+            .daohang{
+                padding: 10px 20px;
+                border-bottom: 1px solid rgb(15, 19, 18);
+                font-size :14px;
+                color:rgb(37, 23, 6)
+            }
+            .wenzi{
+                font-size: 30px;
+                color: rgb(14, 3, 3);
+                font-style:Algerian;
+                text-align: center;
+                
+
+            }
+            
+        </style>
+
+    </head>
+    <body class="flex" height="100%">
+        <!--侧边栏-->
+        <div style="width:20%;height:100vh;z-index: 2; " 
+        class="qianbaiSe ">
+        <!--头像栏-->
+        <div
+                style="padding: 0px;
+                padding-left: 3px;
+                height: 10vh;
+                align-items: center;
+                justify-content:left;
+                border-bottom: 1px solid rgb(12, 11, 12);
+                "
+                class="flex"
+            >
+            <img 
+                src="fshby01.jpg"
+                width="40px" 
+                height="40px" 
+                alt=""
+            >
+            <div style="margin-left: 10px;">浮生何必言</div>
+        </div>
+        <!--导航栏-->
+        <div class="flex1">
+            <div class="daohang"><A href="index02.html">河西</A>></div>
+            <div class="daohang">VS code</div>
+            <div class="daohang">Sublime</div>
+            <div class="daohang">System archite design</div>
+            <div class="daohang">java</div>
+        </div>
+
+
+    </div>
+        <div style="width:80%" class="flex1 flex column" >
+            <!--头部栏-->
+            <div class="qianbaiSe wenzi" style="height:10vh; z-index: 1;" >生活手册</div>
+            <div style="overflow:auto" class="flex1 flex baiSe" >
+                <!--左区-->
+                <div style="flex:3;" class="flex column mg8" >
+                    <!--数据区-->
+                    <div class="flex" >
+                        <div style="height: 20vh" class="flex1 mgt8 qianbaiSe  yinying"></div>
+                        <div style="height: 20vh" class="flex1 mgt8 qianbaiSe yinying"></div>
+                        <div style="height: 20vh" class="flex1 mgt8 qianbaiSe yinying"></div>
+                        <div style="height: 20vh" class="flex1 mgt8 qianbaiSe yinying"></div>
+                    </div>
+                    <!--列表区-->
+                    <div class="flex column ">
+                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying"></div>
+                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying"></div>
+                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying"></div>
+                    </div>
+                </div>
+                <!--右区-->
+                <div style="flex:1" class="flex column  mgr8 " >
+                    <!--消息区-->
+                    <div style="height: 22.5vh  " class=" mgr8 flex qianbaiSe yinying"></div>
+                    <div style="height: 22.5vh  " class=" mgr8 flex qianbaiSe yinying"></div>
+                    <div style="height: 22.5vh  " class=" mgr8 flex qianbaiSe yinying"></div>
+                    <div style="height: 22.5vh  " class=" mgr8 flex qianbaiSe yinying"></div>
+                    <!--消息区-->
+                    
+                </div>
+            </div>
+        
+        </div>
+        
+
+    </body>
+    </html>
