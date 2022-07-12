@@ -4,14 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>浮生何必言</title>
         <style>
             body{
                 
                 margin: 0px;
                 /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
                 height: 100vh;
-                background-color: rgba(193, 215, 217, 0.86)
+                background-image: url("backgroundbiaoti.png")
+                /* background-color: rgba(193, 215, 217, 0.86) */
+                
+                
             
             }
             /* *{
@@ -28,10 +31,17 @@
                 
             }
             .baiSe{
+                
                 background-color: hsla(273, 69%, 63%, 0.364);
             }
             .qianbaiSe{
                 background-color: hsla(276, 24%, 41%, 0.427);
+            }
+            .biaotibeijing{
+                background-image: url("backgroundbiaoti.png");
+                height: 100%;
+                width: 100%;
+                
             }
             .flex1{
                 flex:1;
@@ -44,6 +54,8 @@
                 
                 
             }
+           
+        
             .mgr8{
                 margin: 4px;
 
@@ -74,31 +86,36 @@
     <body class="flex" height="100%">
         <!--侧边栏-->
         <div style="width:20%;height:100vh;z-index: 2; " 
-        class="qianbaiSe ">
+        class="qianbaiSe  ">
         <!--头像栏-->
         <div
+                class="flex biaotibeijing"
                 style="padding: 0px;
                 padding-left: 3px;
                 height: 10vh;
+                
                 align-items: center;
                 justify-content:left;
                 border-bottom: 1px solid rgb(12, 11, 12);
+                
                 "
-                class="flex"
+               
             >
+           
             <img 
                 src="fshby01.jpg"
                 width="40px" 
                 height="40px" 
+                
                 alt=""
             >
-            <div style="margin-left: 10px;">浮生何必言</div>
+            <div  style="margin-left: 10px;">浮生</div>
         </div>
         <!--导航栏-->
         <div class="flex1">
-            <div class="daohang"><A href="index02.html">河西</A>></div>
-            <div class="daohang">VS code</div>
-            <div class="daohang">Sublime</div>
+            <div class="daohang"><A href="index02.html">河西</A></div>
+            <div class="daohang"><A href="vscode.html">VS code</A></div>
+            <div class="daohang"><A href="sublime.html">Sublime</A></div>
             <div class="daohang">System archite design</div>
             <div class="daohang">java</div>
         </div>
@@ -107,31 +124,100 @@
     </div>
         <div style="width:80%" class="flex1 flex column" >
             <!--头部栏-->
-            <div class="qianbaiSe wenzi" style="height:10vh; z-index: 1;" >生活手册</div>
+            <div class="qianbaiSe wenzi" style="height:10vh; z-index: 1;" >
+                生活手册</div>
             <div style="overflow:auto" class="flex1 flex baiSe" >
                 <!--左区-->
                 <div style="flex:3;" class="flex column mg8" >
                     <!--数据区-->
                     <div class="flex" >
-                        <div style="height: 20vh" class="flex1 mgt8 qianbaiSe  yinying"></div>
-                        <div style="height: 20vh" class="flex1 mgt8 qianbaiSe yinying"></div>
-                        <div style="height: 20vh" class="flex1 mgt8 qianbaiSe yinying"></div>
-                        <div style="height: 20vh" class="flex1 mgt8 qianbaiSe yinying"></div>
+                        <div style="height: 5vh" class="flex1 mgt8 qianbaiSe  yinying">
+                            <img src="tuzi.gif"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                        </div>
+                        <div style="height: 5vh" class="flex1 mgt8 qianbaiSe yinying">
+                            <img src="tuzi.gif"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                        </div>
+                        <div style="height: 5vh" class="flex1 mgt8 qianbaiSe yinying">
+                            <img src="tuzi.gif"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                        </div>
+                        <div style="height: 5vh" class="flex1 mgt8 qianbaiSe yinying">
+                            <img src="tuzi.gif"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                        </div>
                     </div>
                     <!--列表区-->
                     <div class="flex column ">
-                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying"></div>
-                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying"></div>
-                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying"></div>
+                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying" >
+                            <img src="background01.jpg"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                        </div>
+                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying">
+                            <img src="background01.jpg"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                        </div>
+                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying">
+                            <img src="background01.jpg"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                        </div>
+                        <div style="height: 23.3333vh" class="mgt8 qianbaiSe yinying">
+                            <img src="background01.jpg"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                        </div>
                     </div>
                 </div>
                 <!--右区-->
-                <div style="flex:1" class="flex column  mgr8 " >
+                <div style="flex:1 " style="overflow:auto"  class="flex column  mgr8 " >
                     <!--消息区-->
-                    <div style="height: 22.5vh  " class=" mgr8 flex qianbaiSe yinying"></div>
-                    <div style="height: 22.5vh  " class=" mgr8 flex qianbaiSe yinying"></div>
-                    <div style="height: 22.5vh  " class=" mgr8 flex qianbaiSe yinying"></div>
-                    <div style="height: 22.5vh  " class=" mgr8 flex qianbaiSe yinying"></div>
+                    <div style="height: 160px  " class=" mgr8 flex qianbaiSe yinying">
+                        <img src="background02.png"  
+                            height=100%
+                            width=100% a
+                            alt="">
+                           
+                    </div>
+                    <div style="height: 160px " class=" mgr8 flex qianbaiSe yinying">
+                     <img src="background02.png"  
+                            height=100%
+                            width=100% a
+                            alt="">      
+                    </div>
+                    <div style="height: 160px " class=" mgr8 flex qianbaiSe yinying">
+                     <img src="background02.png"  
+                            height=100%
+                            width=100% a
+                            alt="">       
+                    </div>
+                    <div style="height: 160px  " class=" mgr8 flex qianbaiSe yinying">
+                     <img src="background02.png"  
+                            height=100%
+                            width=100% a
+                            alt="">       
+                    </div>
+                    <div style="height: 160px  " class=" mgr8 flex qianbaiSe yinying">
+                        <img src="background02.png"  
+                            height=100%
+                            width=100% a
+                            alt="">       
+                    </div>
                     <!--消息区-->
                     
                 </div>
