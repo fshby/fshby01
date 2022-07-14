@@ -1,108 +1,145 @@
 <html><head>
  
-    <title>郑堃逢</title>
+    <title>hexi</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     
-    
-    </head>
-    <body style="
-        margin: 1px;
-        /* border: 1px  solid #00ffe2; */
-        padding: 1px;
-        /* align-items: center; */
-        display: flex;
-        flex-direction: column;
-    ">
-        <touxianglan style="
-            width: 100vh;
-            height: 15vh;
-            background-color: #00ffee3b;
+    <style>
+        
+
+        .zhuneirongback{
+            background-color: rgba(248, 226, 198, 0.615);
+        }
+        .dibulanback{
+            background-image: url(hexiback01.gif);
+            background-size:2900px 600px;
+        
+            
+
+        }
+        .touxianglanback{
+            background-image: url(hexiback02.gif);
+            background-size:2900px 600px;
+        }
+        body{
+            margin: 8px;
+            padding: 10px;
             display: flex;
+            width: 100vh;
+            height: 100vh;
+            flex-direction: column; 
+            justify-items: center;
             align-items: center;
+            overflow:auto;
+            
+        }
+        .touxianglan{
+           
+            width: 100vh;
+            height: 20vh;
+            /* background-color: #00ffee3b; */
+            display: flex;
+            align-items: center; 
             justify-items: center;
             flex-direction: column;
-            /* flex-direction: row; */
-            /* flex-direction: row-reverse; */
-        ">
-            <div style="display:flex;
-            align-self: start;
-            margin-top: 50px;
-            
-    
-            ">
-            <A href="index.html"> <img 
-                src="icon_1.gif" 
-                alt=""
-                width="40px"
-                height="40px" 
-                >主页</A>
-        
-            </div>
-            <div 
-            style="display:flex;
-            align-self:center;
-            margin-right: 600px;
-            
-            
-            ">
-                <img 
-                src="fshby01.jpg" 
-                alt="Smiley face" 
-                width="80"
-                height="80"
-                
-                style="
-                /* border-block-start-color: blue; */
-                background-color: #00ffee3b;
-            ">
-            </div>
-            </touxianglan>
-    
-        <zhuneirong style="
-            /* margin: 0; */
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* align-items: center; */
+           
+
+        }
+        .zhuneirong{
             display: block;
             padding: 30px;
-            max-width: 100vh;
-            min-height: 70vh;
-            width: 90%;
+            height: 100vh;
+            width: 98vh;
             letter-spacing: 1px;
             line-height: 1.7;
-        ">
-            <table  border="1" 
-            bordercolor="#00ffee3b"  width="100%" >
-        <tr> <th>Ctrl+a是全选 </th> </tr>
-        <tr><th>Ctrl+V是粘贴 </th></tr>
-        <tr><th>Ctrl+c是复制</th></tr>
-        <tr><th>Ctrl+z是撤销  </th></tr>
-        <tr><th>Capsloc大小写键盘锁</th></tr>
-        <tr><th>Enter 换行 回车</th></tr>
-        <tr><th>Tab制表键 缩进	</th></tr>
-        <tr><th>Alt+tab界面切换</th></tr>
-        <tr><th>Shift切换中英文</th></tr>
-        <tr><th>Ctrl+shift切换输入法</th></tr>
-        <tr><th>Ctrl+鼠标跨行挑选</th></tr>
-        <tr><th>Ait+鼠标竖选五</th></tr>
-        <p>金山打字！练字快捷键！</p>
-        <hr width="100%"></th>
-        </table>
-        <hr width="100%"></hr>
-        
-        <hr></hr>
-        </zhuneirong>
-        <dibulan style="
+            font-size:xx-large;
+            
+
+        }
+        .dibulan{
             width: 100vh;
-            height: 15vh;
-            background-color: #00ffee3b;
+            height: 20vh;
+            /* background-color: #00ffee3b; */
             display: flex;
             justify-items:right;
             align-items: center;
             flex-direction: column;
+        }
+    </style>
+    </head>
+    <body>
+        <touxianglan 
+            class="touxianglanback touxianglan"
+            >
+            <div 
+                style="display:flex;
+                align-self: start;
+                margin-top: 100px;
+                margin-left: 100px;
+                "
+            >
+                <A href="index.html"> <img 
+                    src="icon_1.gif" 
+                    alt=""
+                    width="100px"
+                    height="100px" 
+                    ></A>
+            </div>
+            <div 
+            >
+                <img 
+                src="fshby01.jpg" 
+                alt="Smiley face" 
+                width="200px"
+                height="200px"
+                style="
+                background-color: #00ffee3b;
+            ">
+            </div>
+        </touxianglan>
+    
+        <zhuneirong  
+            class="zhuneirongback zhuneirong"
+            >
+            <table  border="1" 
+            font-size="6"
+            align="center"
+            bordercolor="black"  width="80%"
+             >
+                <tr> <th>  Ctrl+a    </th><th>  是全选 </th> </tr>
+                <tr> <th>  Ctrl+c  </th><th>  是复制 </th> </tr>
+                <tr> <th>  Ctrl+V  </th><th> 是粘贴  </th> </tr>
+                <tr> <th>  Ctrl+z</th><th>  是撤销 </th> </tr>
+                <tr> <th>  Ctrl+s   </th><th> 保存  </th> </tr>
+                <tr> <th>  Ctrl+x   </th><th> 剪切  </th> </tr>
+                <tr> <th>  Capsloc  </th><th>  大小写键盘锁 </th> </tr>
+                <tr> <th>  Enter  </th><th> 换行回车  </th> </tr>
+                <tr> <th>  Tab   </th><th>  制表键缩进 </th> </tr>
+                <tr> <th> Tab+shift </th><th> 回退  </th> </tr>
+                <tr> <th>  Alt+tab </th><th>  界面切换 </th> </tr>
+                <tr> <th>  Shift   </th><th>   </th> </tr>
+                <tr> <th>  Ctrl+shift </th><th>  切换输入法 </th> </tr>
+                <tr> <th>  Ctrl+鼠标 </th><th> 跨行挑选  </th> </tr>
+                <tr> <th>  Ait+鼠标 </th><th> 竖选  </th> </tr>
+                <tr> <th>  Win+w   </th><th>  截屏 </th> </tr>
+                <tr> <th>  #NAME? </th><th>  求和公 </th> </tr>
+                <tr> <th> =MID(A1,1,3)enter </th><th>  拆分文本 </th> </tr>
+                <tr> <th> =AVERAGE()enter </th><th> 平均数  </th> </tr>
+                <tr> <th> CTER +E </th><th> 快速填充 </th> </tr>
+                <tr> <th> CTRL +H </th><th> 快速查找  </th> </tr>
             
-            "><p>版权0.01</p>
-            <p>微信号 zkf1101139736</p>
+                    <p>金山打字！练字快捷键！</p>
+                     <hr width="80%"></hr>
+                </table>
+                
+                
+                <hr></hr>
+                <A href="index.pdf">函数目录</A>
+        </zhuneirong>
+        <dibulan 
+            class="dibulan dibulanback"
+        >
+            <p>版权0.01</p>
+            <p>微信号 zk1101139736</p>
         </dibulan>
     
     

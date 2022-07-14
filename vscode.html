@@ -1,76 +1,105 @@
-<html><head>
+\<html><head>
  
-    <title>郑堃逢</title>
+    <title>vscode</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     
-    
-    </head>
-    <body style="
-        margin: 1px;
-        /* border: 1px  solid #00ffe2; */
-        padding: 1px;
-        /* align-items: center; */
-        display: flex;
-        flex-direction: column;
-    ">
-        <touxianglan style="
-            width: 100vh;
-            height: 15vh;
-            background-color: #00ffee3b;
+    <style>
+        
+
+        .zhuneirongback{
+            background-color: rgba(248, 226, 198, 0.615);
+        }
+        .dibulanback{
+            background-image: url(hexiback01.gif);
+            background-size:2900px 600px;
+        
+            
+
+        }
+        .touxianglanback{
+            background-image: url(hexiback02.gif);
+            background-size:2900px 600px;
+        }
+        body{
+            margin: 8px;
+            padding: 10px;
             display: flex;
+            width: 100vh;
+            height: 100vh;
+            flex-direction: column; 
+            justify-items: center;
             align-items: center;
+            overflow:auto;
+            
+        }
+        .touxianglan{
+           
+            width: 100vh;
+            height: 20vh;
+            /* background-color: #00ffee3b; */
+            display: flex;
+            align-items: center; 
             justify-items: center;
             flex-direction: column;
-            /* flex-direction: row; */
-            /* flex-direction: row-reverse; */
-        ">
-            <div style="display:flex;
-            align-self: start;
-            margin-top: 50px;
+           
+
+        }
+        .zhuneirong{
+            display: block;
+            padding: 30px;
+            height: 100vh;
+            width: 98vh;
+            letter-spacing: 1px;
+            line-height: 1.7;
+            font-size:xx-large;
             
-    
-            ">
-            <A href="index.html"> <img 
-                src="icon_1.gif" 
-                alt=""
-                width="40px"
-                height="40px" 
-                >主页</A>
-        
+
+        }
+        .dibulan{
+            width: 100vh;
+            height: 20vh;
+            /* background-color: #00ffee3b; */
+            display: flex;
+            justify-items:right;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    </head>
+    <body>
+        <touxianglan 
+            class="touxianglanback touxianglan"
+            >
+            <div 
+                style="display:flex;
+                align-self: start;
+                margin-top: 100px;
+                margin-left: 100px;
+                "
+            >
+                <A href="index.html"> <img 
+                    src="icon_1.gif" 
+                    alt=""
+                    width="100px"
+                    height="100px" 
+                    ></A>
             </div>
             <div 
-            style="display:flex;
-            align-self:center;
-            margin-right: 750px;
-            
-            
-            ">
+            >
                 <img 
                 src="fshby01.jpg" 
                 alt="Smiley face" 
-                width="80"
-                height="80"
-                
+                width="200px"
+                height="200px"
                 style="
-                /* border-block-start-color: blue; */
                 background-color: #00ffee3b;
             ">
             </div>
-            </touxianglan>
+        </touxianglan>
     
-        <zhuneirong style="
-            /* margin: 0; */
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* align-items: center; */
-            display: block;
-            padding: 30px;
-            max-width: 100vh;
-            min-height: 70vh;
-            width: 90%;
-            letter-spacing: 1px;
-            line-height: 1.7;
-        ">
+        <zhuneirong  
+            class="zhuneirongback zhuneirong"
+            >
             <pre>
                                 1	VS Code插件：
                 1.1	Chinese：中文界面
@@ -106,18 +135,15 @@
 
 
             </pre>
+                                
+                
+                <hr></hr>
         </zhuneirong>
-        <dibulan style="
-            width: 100vh;
-            height: 15vh;
-            background-color: #00ffee3b;
-            display: flex;
-            justify-items:right;
-            align-items: center;
-            flex-direction: column;
-            
-            "><p>版权0.01</p>
-            <p>微信号 zkf1101139736</p>
+        <dibulan 
+            class="dibulan dibulanback"
+        >
+            <p>版权0.01</p>
+            <p>微信号 zk1101139736</p>
         </dibulan>
     
     

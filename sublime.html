@@ -1,111 +1,130 @@
 <html><head>
  
-    <title>郑堃逢</title>
+    <title>hexi</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     
-    
-    </head>
-    <body style="
-        margin: 1px;
-        /* border: 1px  solid #00ffe2; */
-        padding: 1px;
-        /* align-items: center; */
-        display: flex;
-        flex-direction: column;
-    ">
-        <touxianglan style="
-            width: 100vh;
-            height: 15vh;
-            background-color: #00ffee3b;
+    <style>
+        
+
+        .zhuneirongback{
+            background-color: rgba(248, 226, 198, 0.615);
+        }
+        .dibulanback{
+            background-image: url(hexiback01.gif);
+            background-size:2900px 600px;
+        
+            
+
+        }
+        .touxianglanback{
+            background-image: url(hexiback02.gif);
+            background-size:2900px 600px;
+        }
+        body{
+            margin: 8px;
+            padding: 10px;
             display: flex;
+            width: 100vh;
+            height: 100vh;
+            flex-direction: column; 
+            justify-items: center;
             align-items: center;
+            overflow:auto;
+            
+        }
+        .touxianglan{
+           
+            width: 100vh;
+            height: 20vh;
+            /* background-color: #00ffee3b; */
+            display: flex;
+            align-items: center; 
             justify-items: center;
             flex-direction: column;
-            /* flex-direction: row; */
-            /* flex-direction: row-reverse; */
-        ">
-            <div style="display:flex;
-            align-self: start;
-            margin-top: 50px;
-            
-    
-            ">
-            <A href="index.html"> <img 
-                src="icon_1.gif" 
-                alt=""
-                width="40px"
-                height="40px" 
-                >主页</A>
-        
-            </div>
-            <div 
-            style="display:flex;
-            align-self:center;
-            margin-right: 750px;
-            
-            
-            ">
-                <img 
-                src="fshby01.jpg" 
-                alt="Smiley face" 
-                width="80"
-                height="80"
-                
-                style="
-                /* border-block-start-color: blue; */
-                background-color: #00ffee3b;
-            ">
-            </div>
-            </touxianglan>
-    
-        <zhuneirong style="
-            /* margin: 0; */
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* align-items: center; */
+           
+
+        }
+        .zhuneirong{
             display: block;
             padding: 30px;
-            max-width: 100vh;
-            min-height: 70vh;
-            width: 90%;
+            height: 100vh;
+            width: 98vh;
             letter-spacing: 1px;
             line-height: 1.7;
-        ">
-            <pre>
-                            编辑类
-            •	Ctrl+J 合并选中的多行代码为一行。
-                举个栗子：将多行格式的CSS属性合并为一行。
-            •	Ctrl+Shift+D  复制光标所在整行，插入到下一行。
-                //如果快捷键冲突，就需要修改
-            •	Tab 向右缩进。
-            •	Shift+Tab 向左缩进。
-            •	Ctrl+K+K 从光标处开始删除代码至行尾。
-            •	Ctrl+Shift+K 删除整行。
-            •	Ctrl+/ 注释单行。
-            •	Ctrl+Shift+/ 注释多行。
-            •	Ctrl+K+U 转换大写。
-            •	Ctrl+K+L 转换小写。
-            •	Ctrl+Z 撤销。
-            •	Ctrl+Y 恢复撤销。
-            •	Ctrl+U 软撤销，感觉和 Gtrl+Z 一样。
-            •	Ctrl+F2 设置书签
-            •	Ctrl+T 左右字母互换。
-            •	F6 单词检测拼写
+            font-size:xx-large;
+            
 
-            </pre>
-        <hr></hr>
-        </zhuneirong>
-        <dibulan style="
+        }
+        .dibulan{
             width: 100vh;
-            height: 15vh;
-            background-color: #00ffee3b;
+            height: 20vh;
+            /* background-color: #00ffee3b; */
             display: flex;
             justify-items:right;
             align-items: center;
             flex-direction: column;
-            
-            "><p>版权0.01</p>
-            <p>微信号 zkf1101139736</p>
+        }
+    </style>
+    </head>
+    <body>
+        <touxianglan 
+            class="touxianglanback touxianglan"
+            >
+            <div 
+                style="display:flex;
+                align-self: start;
+                margin-top: 100px;
+                margin-left: 100px;
+                "
+            >
+                <A href="index.html"> <img 
+                    src="icon_1.gif" 
+                    alt=""
+                    width="100px"
+                    height="100px" 
+                    ></A>
+            </div>
+            <div 
+            >
+                <img 
+                src="fshby01.jpg" 
+                alt="Smiley face" 
+                width="200px"
+                height="200px"
+                style="
+                background-color: #00ffee3b;
+            ">
+            </div>
+        </touxianglan>
+    
+        <zhuneirong  
+            class="zhuneirongback zhuneirong"
+            >
+            <pre>
+                编辑类
+                •	Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。
+                •	Ctrl+Shift+D  复制光标所在整行，插入到下一行。//如果快捷键冲突，就需要修改
+                •	Tab 向右缩进。
+                •	Shift+Tab 向左缩进。
+                •	Ctrl+K+K 从光标处开始删除代码至行尾。
+                •	Ctrl+Shift+K 删除整行。
+                •	Ctrl+/ 注释单行。
+                •	Ctrl+Shift+/ 注释多行。
+                •	Ctrl+K+U 转换大写。
+                •	Ctrl+K+L 转换小写。
+                •	Ctrl+Z 撤销。
+                •	Ctrl+Y 恢复撤销。
+                •	Ctrl+U 软撤销，感觉和 Gtrl+Z 一样。
+                •	Ctrl+F2 设置书签
+                •	Ctrl+T 左右字母互换。
+                •	F6 单词检测拼写
+            </pre>
+        </zhuneirong>
+        <dibulan 
+            class="dibulan dibulanback"
+        >
+            <p>版权0.01</p>
+            <p>微信号 zk1101139736</p>
         </dibulan>
     
     
