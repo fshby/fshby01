@@ -10,8 +10,8 @@
                 
                 margin: 0px;
                 /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
-                height: 100vh;
-                width: 80vh;
+                max-height: 100vh;
+                max-width:100vh;
                 /* background-color: rgba(193, 215, 217, 0.86) */
                 
                 
@@ -32,10 +32,10 @@
             }
             .baiSe{
                 
-                background-color:#4e6dda ;
+                background-color:#4e6cdac5 ;
             }
             .qianbaiSe{
-                background-color: #4e8dda;
+                background-color:#304f8ed0;
             }
             .xiaoxiback{
                 background-image: url("xiaoxiback.gif");
@@ -96,7 +96,7 @@
                
             }
             .daohang{
-                padding: 10px 1px;
+                padding: 20px 10px;
                 border-bottom: 1px solid rgb(15, 19, 18);
                 font-size :14px;
                 color:rgb(37, 23, 6)
@@ -115,7 +115,7 @@
     </head>
     <body class="flex " height="100%" >
         <!--侧边栏-->
-        <div style="width:15%;height:100vh;z-index: 2; " 
+        <div style="width:20%;height:100vh;z-index: 2; " 
         class="qianbaiSe  ">
             <!--头像栏-->
             <div
@@ -167,7 +167,7 @@
                             alt=""></A>
                         
                     </div>
-                    <A href="new.html">
+                    <A href="hexi.html">
                         <div class="flexpiaofu  ">
                         
                         </div>
@@ -175,7 +175,8 @@
                     
                 </div>
                 
-                <div style=" height: 8vh;" class="flex2 xiaoxiback " >
+                <div style=" height: 8vh;min-width: 100vh;" 
+                class="flex2 xiaoxiback " >
                     <!--数据区-->
                     
                 </div>
