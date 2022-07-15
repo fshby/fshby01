@@ -5,113 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>浮生何必言</title>
-        <style>
-            body{
-                
-                margin: 0px;
-                /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
-                max-height: 100vh;
-                max-width:100vh;
-                /* background-color: rgba(193, 215, 217, 0.86) */
-                
-                
-            
-            }
-            /* *{
-            
-            border: 1px solid rgb(239, 242, 242);
-            } */
-            .yinying{
-                box-shadow:rgb(65, 15, 17)
-            }
-            .flex{
-                /* 按行分布，排成一行 */
-                display: flex;
-                flex-direction: row;
-                
-            }
-            .baiSe{
-                
-                background-color:#4e6cdac5 ;
-            }
-            .qianbaiSe{
-                background-color:#304f8ed0;
-            }
-            .xiaoxiback{
-                background-image: url("xiaoxiback.gif");
-                height: 100vh;
-                width: 100vh;
-                
-            }
-            
-            /* .biaotibeijing{
-                background-image: url("02.gif");
-                height: 100%;
-                width: 100%;
-                
-            } */
-            /* .biaotibeijingO2{
-                background-image: url("02.gif");
-                height: 100%;
-                width: 100%;
-                
-            } */
-            .flex1{
-                flex:1;
-            }
-            .flex2{
-                display: flex;
-                align-items: flex-start;
-                align-self: flex-start;
-                width: 75vh;
-            }
-            .flexpiaofu{
-                margin-left: 100px;
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                align-self: flex-start;
-                width: 160px;
-                height: 160px;
-                /* border: 1px solid rgb(7, 8, 8); */
-
-            }
-            .column{
-                flex-direction: column;
-            }
-            .mg8{
-                margin: 6px;
-                
-                
-            }
-           
-        
-            .mgr8{
-                margin: 4px;
-
-               /* border: 1px solid rgb(27, 162, 162); */
-            }
-            .mgt8{
-                margin: 6px;
-               
-            }
-            .daohang{
-                padding: 20px 10px;
-                border-bottom: 1px solid rgb(15, 19, 18);
-                font-size :14px;
-                color:rgb(37, 23, 6)
-            }
-            .wenzi{
-                font-size: 30px;
-                color: rgb(14, 3, 3);
-                font-style:Algerian;
-                text-align: center;
-                
-
-            }
-            
-        </style>
-
+        <link rel="stylesheet" type="text/css" href="index.css">
+       
     </head>
     <body class="flex " height="100%" >
         <!--侧边栏-->
@@ -143,27 +38,114 @@
             </div>
         <!--导航栏-->
             <div class="flex1">
-                <div class="daohang"><A href="hexi.html">河西</A></div>
-                <div class="daohang"><A href="vscode.html">VS code</A></div>
-                <div class="daohang"><A href="sublime.html">Sublime</A></div>
+                <div class="daohang"><A href="#hexi">河西</A></div>
+                <div class="daohang"><A href="#vscode">VS code</A></div>
+                <div class="daohang"><A href="#sublime">Sublime</A></div>
                 <div class="daohang">System archite design</div>
-                <div class="daohang">java</div>
+                <div class="daohang">java</div></li>>
             </div>
          </div>
         <div style="width:90%" class="flex1 flex column" >
             <!--头部栏-->
-            <div class="qianbaiSe wenzi " 
-            style="height:10vh; z-index: 1;" >
-                生活手册</div>
-            <div style="overflow:auto" class="flex1 column baiSe" >
-                <!--宠物列表区-->
-                <div style=" height: 80vh;" class="column xiaoxiback mg8" >
+            <div  class="qianbaiSe wenzi          style="height:10vh; z-index: 1;" >
+                浮生何必言</div>
+
+                <!--内容区-->
+            <div   style="overflow:auto" class="flex1 flex " >
+                <!--文字内容-->
+                <div style="overflow:auto"  class="flex1 xiaoxiback02 mg8">
+                 
+                   
+                    <table  >
+                        <tr> <th>  Ctrl+a    </th><th>  是全选 </th> </tr>
+                        <tr> <th>  Ctrl+c  </th><th>  是复制 </th> </tr>
+                        <tr> <th>  Ctrl+V  </th><th> 是粘贴  </th> </tr>
+                        <tr> <th>  Ctrl+z</th><th>  是撤销 </th> </tr>
+                        <tr> <th>  Ctrl+s   </th><th> 保存  </th> </tr>
+                        <tr> <th>  Ctrl+x   </th><th> 剪切  </th> </tr>
+                        <tr> <th>  Capsloc  </th><th>  大小写键盘锁 </th> </tr>
+                        <tr> <th>  Enter  </th><th> 换行回车  </th> </tr>
+                        <tr> <th>  Tab   </th><th>  制表键缩进 </th> </tr>
+                        <tr> <th> Tab+shift </th><th> 回退  </th> </tr>
+                        <tr> <th>  Alt+tab </th><th>  界面切换 </th> </tr>
+                        <tr> <th>  Shift   </th><th>   </th> </tr>
+                        <tr> <th>  Ctrl+shift </th><th>  切换输入法 </th> </tr>
+                        <tr> <th>  Ctrl+鼠标 </th><th> 跨行挑选  </th> </tr>
+                        <tr> <th>  Ait+鼠标 </th><th> 竖选  </th> </tr>
+                        <tr> <th>  Win+w   </th><th>  截屏 </th> </tr>
+                        <tr> <th>  #NAME? </th><th>  求和公 </th> </tr>
+                        <tr> <th> =MID(A1,1,3)enter </th><th>  拆分文本 </th> </tr>
+                        <tr> <th> =AVERAGE()enter </th><th> 平均数  </th> </tr>
+                        <tr> <th> CTER +E </th><th> 快速填充 </th> </tr>
+                        <tr> <th> CTRL +H </th><th> 快速查找  </th> </tr>
+                    
+                        <A name="hexi">金山打字！练字快捷键！</A>  
+                             <hr width="100%"></hr>
+                        </table>
+    <pre>
+            <A name="vscode"><font size="h3"><b >VS code</b> </font> ：</A> 
+            1	VS Code插件 
+    1.1	Chinese：中文界面
+    1.2	Prettier：代码美化
+    1.3	Wisen_Translate： 翻译插件
+    1.4	Search/Translate Hreo：搜索跳转翻译
+    1.5	vs code-icons   :美化图标
+    1.6	live preview : 实时预览html   或者live server
+    1.7	Theme：主题插件
+
+
+
+        2	快捷键：
+    2.1	F1 输入 restart  点击插件宿主扩展重启
+    2.2	ctrl +d  同时选择相同标签同时修改
+    2.3	alt +光标，可以同时添加多个光标
+    2.4	alt+shift + 上下键，可以将一行内容快速 的复制到上方或下方
+    2.5	ctrl+F 查找替换
+    2.6	ctrl +/  快速添加注释
+
+        3	VS Code 配置
+    3.1	文件——首选项——设置中打开
+    3.2	Format On Save ：勾选，保存后自动格式化
+    3.3	Format On Paste: 勾选自动格式化
+    3.4	Default Formatter :选择prettier，默认格式华插件
+    3.5	Linked Editing：勾选，同时重命名html签名
+
+
+    3.6	在电脑上运行JavaScript	语言的后端框架：Node.js
+
+    3.7	代码版本管理：Git
+
+
+
+    </pre>
+<pre>
+            <b >sublime</b> 
+    <A name="sublime">编辑类</A>
+    •	Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。
+    •	Ctrl+Shift+D  复制光标所在整行，插入到下一行。//如果快捷键冲突，就需要修改
+    •	Tab 向右缩进。
+    •	Shift+Tab 向左缩进。
+    •	Ctrl+K+K 从光标处开始删除代码至行尾。
+    •	Ctrl+Shift+K 删除整行。
+    •	Ctrl+/ 注释单行。
+    •	Ctrl+Shift+/ 注释多行。
+    •	Ctrl+K+U 转换大写。
+    •	Ctrl+K+L 转换小写。
+    •	Ctrl+Z 撤销。
+    •	Ctrl+Y 恢复撤销。
+    •	Ctrl+U 软撤销，感觉和 Gtrl+Z 一样。
+    •	Ctrl+F2 设置书签
+    •	Ctrl+T 左右字母互换。
+    •	F6 单词检测拼写
+</pre>
+                </div> 
+                <div style="overflow:hidden ;" class=" flex1 column xiaoxiback mg8" >
                     <!--列表区-->
                     
                     <div class="flexpiaofu  ">
                         <A href="vscode.html"><img src="piaofu01.gif" 
                             width="100%"
-                            height="80%"
+                            height="8%"
                             alt=""></A>
                         
                     </div>
@@ -174,14 +156,9 @@
                     </A>
                     
                 </div>
-                
-                <div style=" height: 8vh;min-width: 100vh;" 
-                class="flex2 xiaoxiback " >
-                    <!--数据区-->
-                    
-                </div>
-                
             </div>
+            
+            
         
         </div>
         

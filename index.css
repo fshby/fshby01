@@ -1,0 +1,125 @@
+
+    body{
+                    
+        margin: auto;
+        /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
+        max-height: 100vh;
+        
+        /* background-color: rgba(193, 215, 217, 0.86) */
+        
+        
+
+    }
+    /* *{
+
+    border: 1px solid rgb(239, 242, 242);
+    } */
+    .yinying{
+        box-shadow:rgb(65, 15, 17)
+    }
+    
+    .baiSe{
+        
+        background-color:#4e6cdac5 ;
+    }
+    .qianbaiSe{
+        background-color:#304f8ed0;
+    }
+    .xiaoxiback{
+        background-image: url("xiaoxiback.gif");
+        background-size: 900px 800px;
+        
+    }
+    .xiaoxiback02{
+        background-image: url("xiaoxiback02.png");
+       
+        
+    }
+
+    /* .biaotibeijing{
+        background-image: url("02.gif");
+        height: 100%;
+        width: 100%;
+        
+    } */
+    /* .biaotibeijingO2{
+        background-image: url("02.gif");
+        height: 100%;
+        width: 100%;
+        
+    } */
+    .flex{
+        /* 按行分布，排成一行 */
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .flex1{
+        flex:1;
+    }
+    .flex2{
+        display: flex;
+        align-items: flex-start;
+        align-self: flex-start;
+        width: 75vh;
+    }
+    .flexpiaofu{
+        margin-left: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-self: flex-start;
+        width: 160px;
+        height: 160px;
+        /* border: 1px solid rgb(7, 8, 8); */
+
+    }
+    .column{
+        flex-direction: column;
+    }
+    .mg8{
+        margin: 6px;
+        
+        
+    }
+
+
+    .mgr8{
+        margin: 4px;
+
+    /* border: 1px solid rgb(27, 162, 162); */
+    }
+    .mgt8{
+        margin: 6px;
+    
+    }
+    .daohang{
+        padding: 20px 10px;
+        border-bottom: 1px solid rgb(15, 19, 18);
+        font-size :14px;
+        color:rgb(37, 23, 6)
+    }
+    .wenzi{
+        font-size: 30px;
+        color: rgb(14, 3, 3);
+        font-style:Algerian;
+        text-align: center;
+        
+
+    }
+    table{
+    margin-left: 80px;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid rebeccapurple;
+    font-size:large;
+    border:2px solid rgba(255, 0, 0, 0.614);
+    border-radius: 12px;
+    border-color: rgb(23, 215, 43);
+    width:"80%";
+
+
+    }
+    b{
+        font-size: larger;
+    }
