@@ -27,7 +27,8 @@
     }
     .xiaoxiback{
         background-image: url("xiaoxiback.gif");
-        background-size: 900px 800px;
+        margin-top: 200px;
+        background-size: 400px 500px;
         
     }
     .xiaoxiback02{
@@ -64,7 +65,7 @@
         width: 75vh;
     }
     .flexpiaofu{
-        margin-left: 400px;
+        margin-left: 120px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -108,7 +109,7 @@
 
     }
     table{
-    margin-left: 80px;
+    margin-left: 20px;
     align-items: center;
     align-content: center;
     border-bottom: 1px solid rebeccapurple;
@@ -122,4 +123,20 @@
     }
     b{
         font-size: larger;
+    }
+    @media(max-width:600px){
+       .chongwuqu{
+        display: none;
+        
+       }
+       .neirongqu{
+        display: none;
+        
+       }
+       .neirongqu01{
+        max-width: 800px;
+        align-items: center;
+        justify-items: center;
+       }
+
     }
