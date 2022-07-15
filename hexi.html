@@ -11,7 +11,7 @@
         }
         .dibulanback{
             background-image: url(hexiback01.gif);
-            background-size:2900px 600px;
+            background-size:2900px 700px;
         
             
 
@@ -21,21 +21,26 @@
             background-size:2900px 600px;
         }
         body{
-            margin: 8px;
-            padding: 10px;
+          
+            padding: 1px;
             display: flex;
             max-width: 100vh;
-            max-height: 100vh;
+            min-height: 100vh;
+            margin: auto;
             flex-direction: column; 
             justify-items: center;
             align-items: center;
-            overflow:auto;
+            
             
         }
+        /* *{
+            border: 2px solid red;
+
+        } */
         .touxianglan{
            
-            width: 100vh;
-            height: 20vh;
+            min-width:100%;
+            min-height: 20%;
             /* background-color: #00ffee3b; */
             display: flex;
             align-items: center; 
@@ -46,23 +51,40 @@
         }
         .zhuneirong{
             display: block;
-            padding: 30px;
-            min-height: 100vh;
-            width: 98vh;
+            padding: 3px;
+            min-height: 40%;
+            max-height:60%;
+            overflow: auto;
+            min-width: 100%;
             letter-spacing: 1px;
             line-height: 1.7;
             font-size:xx-large;
             
 
         }
+        table{
+            margin-left: 200px;
+            align-items: center;
+            align-content: center;
+            border-bottom: 1px solid rebeccapurple;
+            font-size: xx-large;
+            border:3px solid rgba(255, 0, 0, 0.614);
+            border-radius: 12px;
+            width:"80%";
+
+
+        }
         .dibulan{
-            width: 100vh;
-            height: 20vh;
+            min-width: 100%;
+            min-height: 20%;
             /* background-color: #00ffee3b; */
             display: flex;
             justify-items:right;
             align-items: center;
             flex-direction: column;
+        }
+        .wenzi{
+            font-size: xx-large;
         }
     </style>
     </head>
@@ -89,9 +111,10 @@
                 <img 
                 src="fshby01.jpg" 
                 alt="Smiley face" 
-                width="200px"
-                height="200px"
+                width="150px"
+                height="150px"
                 style="
+                margin-bottom: 100px;
                 background-color: #00ffee3b;
             ">
             </div>
@@ -100,12 +123,7 @@
         <zhuneirong  
             class="zhuneirongback zhuneirong"
             >
-            <table  border="1" 
-            font-size="6"
-            
-            align="center"
-            bordercolor="black"  width="80%"
-             >
+            <table >
                 <tr> <th>  Ctrl+a    </th><th>  是全选 </th> </tr>
                 <tr> <th>  Ctrl+c  </th><th>  是复制 </th> </tr>
                 <tr> <th>  Ctrl+V  </th><th> 是粘贴  </th> </tr>
@@ -129,12 +147,11 @@
                 <tr> <th> CTRL +H </th><th> 快速查找  </th> </tr>
             
                     <p>金山打字！练字快捷键！</p>
-                     <hr width="80%"></hr>
+                     <hr width="100%"></hr>
                 </table>
-                
-                
                 <hr></hr>
-                <A href="index.pdf">函数目录</A>
+               <div
+               style="margin-left: 800px;"><A href="index.pdf">函数目录</A></div> 
         </zhuneirong>
         <dibulan 
             class="dibulan dibulanback"
