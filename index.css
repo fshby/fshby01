@@ -27,9 +27,8 @@
         
     }
     .xiaoxiback{
-        background-image: url(piaofu02.gif);
-        margin-top: 200px;
-        background-size: 400px 600px;
+        background-image: url(xiaoxiback02.gif);
+        background-size: 600px 600px;
         
     }
     .xiaoxiback02{
@@ -65,25 +64,26 @@
         width: 75vh;
     }
     .flexpiaofu{
-        margin-left: 120px;
+        margin-left: 30px;
+        margin-top: 50px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         align-self: flex-start;
-        width: 160px;
-        height: 160px;
-        /* border: 1px solid rgb(7, 8, 8); */
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(7, 8, 8);
 
     }
     .flexpiaofu02{
-        margin-left: 70px;
+        
         display: flex;
+        margin-right: 300px;
+        padding-right: 200px;
         flex-direction: row;
-        align-items: flex-start;
-        align-self: flex-start;
-        width: 160px;
-        height: 160px;
-        /* border: 1px solid rgb(7, 8, 8); */
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(7, 8, 8);
 
     }
     .column{
