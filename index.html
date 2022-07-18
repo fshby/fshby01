@@ -9,6 +9,7 @@
 </head>
 <style>
     .xiaoxiback{
+
         background-image: url(xiaoxiback02.gif);
         background-size: 700px 700px;
         
@@ -18,14 +19,26 @@
     }
     .jianjie{
         display: flex;
-        max-width: 100%;
+        max-width: 80%;
         margin: auto;
         background-color: #676d89;
-        min-height: 50%;
+        min-height: 15%;
         flex-direction: column;
+        align-items: flex-start;
         flex:1;
-    
         margin: 0px;
+    }
+    .jianjie01{
+        display: flex;
+        max-width: 100%;
+        margin: auto;
+        min-height: 10%;
+        flex-direction: row;
+        flex:1;
+        margin: 0px;
+       
+        
+
     }
     body{
         margin: auto;
@@ -33,6 +46,7 @@
         height:100vh;
         display: flex;
         flex-direction:row;
+        justify-items: start;
         /* border: 8px solid rgb(26, 209, 16); */
 
         
@@ -41,8 +55,8 @@
         border: 2px solid red;
     } */
     .flexpiaofu{
-        margin-top: 40px;
-        margin-left: 2px;
+        margin-top: 1px;
+        margin-left: 0px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -55,15 +69,18 @@
     .column{
         flex-direction: column;
     }
+    .row{
+        flex-direction: row;
+    }
     .flexpiaofu02{
         
         display: flex;
         margin-right: 300px;
         padding-right: 200px;
         flex-direction: row;
-        width: 100px;
-        height: 100px;
-        /* border: 1px solid rgb(35, 35, 214); */
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid rgb(35, 214, 127); */
 
     }
     @media(max-width:600px){
@@ -73,10 +90,20 @@
     }
 </style>
 <body class="xiaoxiback">
-    <div style="padding: 50px;">
+    <!--星球区-->
+    <div style="padding-right: 50px;
+        max-height: 100%;
+        max-width:667px;
+        overflow: hidden;
+        /* border: 6px solid white; */
+        align-self: flex-start;
+        
+        
+        
+        ">
+        <!--星球01-->
         <div class="flexpiaofu  " 
         style="margin-top: 8px;">
-                <!--星球01-->
                 <div clas="flex1" 
                 style="
                 margin-top: 80px;
@@ -116,13 +143,13 @@
                     width="100%"
                     height="100%"
                     alt=""></A>
-                <div class="flex" 
-                style="margin-top: 1px;margin-right: 20px;">
-                <A href="hexi.html"><img src="xingqiu04.png" 
-                    width="100%"
-                    height="100%"
-                    alt=""></A>
-                </div>
+                    <div class="flex" 
+                    style="margin-top: 1px;margin-right: 20px;">
+                    <A href="hexi.html"><img src="xingqiu04.png" 
+                        width="100%"
+                        height="100%"
+                        alt=""></A>
+                    </div>
                 </div>
                 
                 <!--星球03-->
@@ -136,28 +163,50 @@
                 </div>
                 
             </div>   
-         <A href="index01.html">
+       
             <div class="flexpiaofu02  ">
-                    <div class="flex"
-                    style="margin-left: 10px;
-                    margin-bottom: 30px;
+                <A href="index01.html">
+                    <div class="flex "
+                    style="margin-left: 3px;
+                    margin-bottom: 20px;
+                    /* border: 6px solid blue; */
                    ">
-                    <img src="paiofu02.gif" 
-                    width="200px"
-                    height="200px"
-                    
+                        <img src="paiofu02.gif" 
+                        width="200px"
+                        height="200px"
+                        
+                        alt="">  
+                        
+                    </div>
+                </A>
+                    <div 
+                    style="
+                    display: flex;flex-direction: column;
+                    justify-items: center;"
+                    >
+                    <img src="etet.png" 
+                    width="100px"
+                    height="100px"
+                    style="margin-left:15px ;margin-top: 5px;"
+                    id="t1"
                     alt="">  
+                    <audio src="beijing .mp3"
+                    style="display: none;"
+                    controls id="bb"></audio>
                     <img src="logo02.png" 
-                    width=""
-                    height=""
+                    width="150px"
+                    height="40px"
+                    style="margin-top:20px ;"
                     
                     alt="">  
+                    </div>
+                    
                     
                 
                 
             </div>
                
-        </A>
+       
             
             
         </div>
@@ -168,12 +217,46 @@
     </div>
 
     <div class="jianjie shouji">
-        <div class="jianjie mg">
-            欢迎！
+        <div class="jianjie01 mg">
+           
+            <div >
+                <img src="xingqiu01.png" 
+                width="100px"
+                style="margin-top:100px ;"
+                height="100px"
+                  alt="">
+            </div>
+            <div> 
+                <p> <font color="whit" size="8" face="华文楷体">简介：</font></p>                   
+               <p>
+                <font color="whit" size="8" face="华文楷体">
+                海王星：初步探索！<br>
+                生存物种：java星人！<br>
+                </font>  
+                </p> 
+                            
+           
+ 
+                
+
+              
+            </div>
+
         </div>
-        <div class="jianjie mg">
-         欢迎！  
+        <div class="jianjie01 mg">
+           
+            <div>
+                <img src="xingqiu01.png" 
+                width="100px"
+                height="100px"
+                  alt="">
+            </div>
+            <div>
+                
+            </div>
+
         </div>
+        
 
 
     </div>
@@ -181,4 +264,5 @@
   
     
 </body>
+<script src="music.js"></script>
 </html>
