@@ -18,19 +18,32 @@
         box-shadow:rgb(65, 15, 17)
     }
     .x{
+        
         margin-top: 5px;
         width: 50px;
         height: 50px;
         display: flex;
-        background-image: url(xingqiu03.png);
+        background-image: url(./image/daohang01.gif);
         background-size: 50px 50px;
     
     }
     .x1{
+        /* display: flex;
+        overflow: auto; */
         line-height: 50px;
         width: 50px;
         height: 50px;
         text-align: center;
+    }
+    .xl{
+        display: flex;
+        flex-direction: column;
+        max-height: 60vh;
+        max-width: 100vh;
+        width: 125px;
+        margin: auto;
+        overflow: auto;
+
     }
     .xl1{
         display: none;
@@ -41,11 +54,13 @@
         border: 3px solid rgba(102, 51, 153, 0.693);
     }
     .xl1:hover{
+        
         background-color: rgb(208, 196, 255);
     }
     .x:hover .xl1{
-
         display: block;
+        
+      
     }
     /* .p{
         background-color: rgba(250, 235, 215, 0.83);
