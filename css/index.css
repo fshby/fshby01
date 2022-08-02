@@ -1,0 +1,209 @@
+
+    body{
+                    
+        margin: auto;
+        /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
+        max-height: 100vh;
+        
+        /* background-color: rgba(193, 215, 217, 0.86) */
+        
+        
+
+    }
+    /* *{
+    list-style: none;
+    border: 1px solid rgb(239, 242, 242);
+    } */
+    .yinying{
+        box-shadow:rgb(65, 15, 17)
+    }
+    .x{
+        
+        margin-top: 5px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        background-image: url(./image/daohang01.gif);
+        background-size: 50px 50px;
+    
+    }
+    .x1{
+        /* display: flex;
+        overflow: auto; */
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+    .xl{
+        display: flex;
+        flex-direction: column;
+        max-height: 60vh;
+        max-width: 100vh;
+        width: 125px;
+        margin: auto;
+        overflow: auto;
+
+    }
+    .xl1{
+        display: none;
+        background-color: #8da2a3;
+        width: 100px;
+        font-size: small;
+       
+        border: 3px solid rgba(102, 51, 153, 0.693);
+    }
+    .xl1:hover{
+        
+        background-color: rgb(208, 196, 255);
+    }
+    .x:hover .xl1{
+        display: block;
+        
+      
+    }
+    /* .p{
+        background-color: rgba(250, 235, 215, 0.83);
+    } */
+    
+    .baiSe{
+        
+        background-color:  #8da2a3;
+    }
+    .qianbaiSe{
+        background-color:#5e777b;
+        
+    }
+    .xiaoxiback{
+        background-image: url(xiaoxiback02.gif);
+        background-size: 600px 600px;
+        
+    }
+    .xiaoxiback02{
+       background-color: #bdd0ce;
+        
+    }
+
+    /* .biaotibeijing{
+        background-image: url("02.gif");
+        height: 100%;
+        width: 100%;
+        
+    } */
+    /* .biaotibeijingO2{
+        background-image: url("02.gif");
+        height: 100%;
+        width: 100%;
+        
+    } */
+    .flex{
+        /* 按行分布，排成一行 */
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .flex1{
+        flex:1;
+    }
+    .flex2{
+        display: flex;
+        align-items: flex-start;
+        align-self: flex-start;
+        width: 75vh;
+    }
+    .flexpiaofu{
+        margin-left: 30px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-self: flex-start;
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid rgb(7, 8, 8); */
+
+    }
+    .flexpiaofu02{
+        
+        display: flex;
+        margin-right: 300px;
+        padding-right: 200px;
+        flex-direction: row;
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid rgb(7, 8, 8); */
+
+    }
+    .column{
+        flex-direction: column;
+    }
+    .mg8{
+        margin: 10px;
+        
+        
+    }
+
+
+    .mgr8{
+        margin: 4px;
+
+    /* border: 1px solid rgb(27, 162, 162); */
+    }
+    .mgt8{
+        margin: 6px;
+    
+    }
+    .daohang{
+        padding: 15px 10px;
+        border-bottom: 1px solid rgb(15, 19, 18);
+        font-size :14px;
+        color:rgb(37, 23, 6);
+        display: none;
+        
+    }
+    .wenzi{
+        font-size: 30px;
+        color: rgb(14, 3, 3);
+        font-style:Algerian;
+        text-align: center;
+        
+
+    }
+    table{
+    margin-left: 20px;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid rebeccapurple;
+    font-size:large;
+    border:2px solid rgba(255, 0, 0, 0.614);
+    border-radius: 12px;
+    border-color: rgb(23, 215, 43);
+    width:"80%";
+
+
+    }
+    b{
+        font-size: larger;
+    }
+    @media(max-width:600px){
+       .chongwuqu{
+        display: none;
+        
+       }
+       /* .chongwuqu02{
+        max-height: 100%;
+       } */
+       .neirongqu{
+        display: none;
+        
+       }
+       .neirongqu01{
+        max-width: 800px;
+        align-items: center;
+        justify-items: center;
+       }
+       .shouji{
+        display: none;
+       }
+
+    }
