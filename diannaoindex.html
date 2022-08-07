@@ -7,8 +7,14 @@
     <title>Small Trash Galaxy</title>
     <style>
     body{
-        background-image: url(./xiaoxiback02.gif);
-        background-size: 1500px 1200px;
+        background-image: url(./xiaoxiback01.jpeg);
+        background-size: 1535px 950px;
+        flex-direction: column;
+        /* 固定背景图片不随鼠标滚动下滑 */
+        background-attachment: fixed;
+        /* background-position: center; */
+        background-size: cover;
+        /* overflow: hidden; */
     }
     /* *{
         border: 5px solid red;
@@ -18,7 +24,9 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
     } */
-
+    .row{
+        flex-direction: row;
+    }
     .overlay {
         height: 0%;
         width: 100%;
@@ -26,8 +34,10 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.825);
-        background-color: rgba(0, 0, 0, 0.244);
+        background-image:url(./image/overlay.jpeg);
+        background-size: 1600px 1300px;
+        /* background-color: rgba(0, 0, 0, 0.825);
+        background-color: rgba(0, 0, 0, 0.244); */
         overflow-y: hidden;
         transition: 0.5s;
     }
@@ -44,7 +54,7 @@
         padding: 8px;
         text-decoration: none;
         font-size: 36px;
-        color: #818181;
+        color: #38b2b2;
         display: block;
         transition: 0.3s;
     }
@@ -82,8 +92,8 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4caf4fc8;
+    color: rgba(255, 255, 255, 0.411);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -133,19 +143,21 @@ span.psw {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: auto;/*   Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    padding-top: 0px;
     align-items: center;
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #a7b4c83e;
+    color: #38b2b2;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
+    
    
 }
 
@@ -161,7 +173,7 @@ span.psw {
 
 .close:hover,
 .close:focus {
-    color: red;
+    color: rgba(255, 0, 0, 0.723);
     cursor: pointer;
 }
 
@@ -195,7 +207,7 @@ span.psw {
 /* Extra styles for the cancel button */
 .cancelbtnzhuce {
     padding: 14px 20px;
-    background-color: #f44336;
+    background-color: #f44336cc;
 }
 /* Add padding to container elements */
 .container {
@@ -225,7 +237,7 @@ span.psw {
 }
 .closezhuce:hover,
 .closezhuce:focus {
-    color: red;
+    color: rgba(255, 0, 0, 0.785);
     cursor: pointer;
 }
 .clearfix::after {
@@ -241,9 +253,193 @@ span.psw {
        width: 100%;
     }
 }
+#myInput {
+  background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 添加搜索按钮 */
+  background-position: 10px 12px; /* 定位搜索按钮 */
+  background-repeat: no-repeat; /* 图片不重复 */
+  width: 100%; /* 全屏幕显示 */
+  font-size: 16px; /* 字体大小 */
+  padding: 12px 20px 12px 40px; /* 设置内边距 */
+  border: 1px solid #ddd; /* 添加灰色边框 */
+  margin-bottom: 12px; /* 添加顶部的外边距 */
+}
+ 
+#myUL {
+  /* 移除默认的列表样式 */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+#myUL li a {
+  border: 1px solid #ddd; /* 链接添加边框 */
+  margin-top: -1px; /* 防止边框重复 */
+  background-color: #f6f6f6; /* 设置灰色背景 */
+  padding: 12px; /* 添加内边距 */
+  text-decoration: none; /* 移除默认的下划线 */
+  font-size: 18px; /* 设置字体大小 */
+  color: black; /* 设置文本为黑色 */
+  display: block; /* 以块形式填充到列表 */
+}
+ 
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* 为所有链接添加悬停效果，标题除外 */
+}
+ /* 漂浮毛玻璃框 */
+.bottom {
+    display: flex; 
+    flex-direction: row;width: 80%;
+    min-height: 250px; 
+    background-color: #44516a3e;
+    padding-top: 0px;
+    margin-top: 6%;
+    margin-left: 10%;
+    
+    align-self:center;justify-self: center;
+    border-radius: 25px;
+
+}
+/* glass毛玻璃效果 */
+.glass{
+    /* background-image: url(/images/simon-lee-XX5RQgTuD8o-unsplash.jpg);
+    background-repeat :no-repeat; #44516a63
+    background-position: center; */
+    border: 2px solid   #44516ab5;
+    background-color:#44516a63#e2def300;
+    z-index: 1;
+    backdrop-filter: blur(30px);
+    /* background-color: #fff; */
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.137);
+}
+/* 标签页 */
+.TagBox{
+    width: 80px;
+    height: 80px;
+    /* display: flex;
+    justify-content: center; */
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 8px;
+}
+.PageIcon{
+    width:60% ;
+    height: 60%;
+    margin: 16px;
+}
+.PageName{
+    color: #eee;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 8px;
+}
+/* 布局 */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.flex-raw{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font: #38b2b2;
+}
+.margin8{
+    margin: 24px 8px;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+/* todo清单 */
+
+.flex{
+    display: flex;
+}
+.AddTodo{
+   width: 100%;
+   height: 24px;
+   outline: none;
+   margin-left: 19px;
+   border: 2px;
+   border-radius: 4px 0px 0px 4px ;
+   color: #333;
+   box-shadow: 0px 10px 16px rgba(0,0,0,.1);
+}
+.AddButton{
+   background-color: #fff;
+   width:6% ;
+   outline: none;
+   border: 1px;
+   border-radius: 0px 4px 4px 0px ;
+   color: #666;
+   padding: 4px 8px;
+   box-shadow: 0px 10px 16px rgba(0,0,0,.1);
+    /* position: relative;
+    right:-214px;
+    top: -26px; */
+}
+.TodoList{
+    font-size: 16px;
+    font-weight: 180;
+    color: #eee;
+}
+.flex-bt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
 
 
+/*应用框*/
+.left{
+    /* 模拟竖向分割线 */
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    padding-right: 40px;
+    /* margin-right: ; */
+    flex: 2;
+}
+.right{
+    margin-left: 40px;
+    flex: 4;
+}
 
+.title{
+    font-size: medium;
+    font-weight: 600;
+    color:#e2def3;
+    margin: 16px 0px;
+}
+
+.TagPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tag{
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+.TagIcon{
+    width: 80px;
+    height: 80px;
+}
+/*尾部说明*/
+.footer{
+    margin: 0 auto;
+    margin-top: 6%;
+}
+.date{
+    color: #eee;
+    margin: 8px;
+    text-align: center;
+}
 </style>
 </head>
 <body>
@@ -264,19 +460,19 @@ span.psw {
         </div>
     </div>
     
-    <h2><font color="" size="6" face="Algerian" >全屏导航素材搜索</font></h2>
-    <p><font color="" size="3" face="微软雅黑 Light" >点击登录，纵向浏览！</font></p>
+    <h2><font color="#38b2b2" size="6" face="Algerian" >点击登录，纵享浏览！</font></h2>
+    <!-- <p><font color="#38b2b2" size="3" face="微软雅黑 Light" >点击登录，纵向浏览！</font></p> -->
     <div style="display:flex;
         margin-left: 0%;
         
-        height: 100px;
+        height: 80px;
        
        /* flex-direction: row;
         align-items: center;
         justify-items: center; */
     ">
         <span style="font-size:30px;cursor:pointer" 
-        onclick="openNav()"><font color="" size="6" face="Algerian" >欢迎来到Small Trash Galaxy ！</font></span>
+        onclick="openNav()"><font color="#38b2b2" size="6" face="Algerian" >欢迎来到Small Trash Galaxy ！</font></span>
     </div>
     <!--登录表单-->
 
@@ -301,7 +497,7 @@ span.psw {
           <input type="checkbox" checked="checked"> 记住我
         </div>
     
-        <div class="container" style="background-color:#f1f1f1">
+        <div class="container" style="background-color:#f1f1f100">
           <button type="button" onclick="document.getElementById('id01').style.display='none'" 
           class="cancelbtn">Cancel</button>
           <span class="psw">Forgot <a href="#">password?</a></span>
@@ -335,7 +531,114 @@ span.psw {
         </div>
       </form>
     </div>
-    
+    <input type="输入要查询的内容" style="width: 600px; margin-left: 120px; color:#000; font-style:normal;"
+      placeholder="搜索.."id="myInput">
+       <!-- <input class="search" type="输入要查询的内容" value="输入要搜索的内容" name=wd> -->
+      <!-- <form action="https://www.baidu.com/s" class="flex">
+       
+        <input class="search" type="输入要查询的内容" placeholder="输入搜索内容，回车确认按。搜索按钮还无法使用" name="wd" _mstplaceholder="146325699">
+        <button class="SearchButton" type="submit" _msthash="900263" _msttexthash="5663684">搜索</button>
+    </form> -->
+    <!--列表搜索显示-->
+     <!-- <ul id="myUL">
+        <li><a href="#">Google</a></li>
+        <li><a href="#">Runoob</a></li>
+       
+        <li><a href="#">Taobao</a></li>
+        <li><a href="#">Wiki</a></li>
+       
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Zhihu</a></li>
+        <li><a href="#">Weibo</a></li>
+      </ul> -->
+    <div class="bottom flex-raw glass">
+        <div id="qingDan" class="left" onload="qingDan()">
+            <!-- onload是当leftdiv加载的时候 调用的函数 -->
+            <h2 class="title" _msthash="176813" _msttexthash="11851632">待办事项</h2>
+            <!-- <div class="flex">
+                <input id="shuRuKuang" class="AddTodo" type="text" placeholder="输入待办事项点击加号添加">
+                <button id="anNiu" class="AddButton" onclick="toDo()">+</button>
+            </div> -->
+            <form action class="flex">
+                <input required type="text" placeholder="输入待办事项并点击点加号添加" class="AddTodo" _mstplaceholder="61678383">
+                <button class="AddButton" type="submit" onclick="toDo()">+</button>
+            </form>
+            
+
+            <!-- 一个列表 -->
+            <!-- <div id="toDoList" class="toDoList flex-bt">
+                <div id="toDoItem">
+                    <p id="toDoThing">123</p>
+                </div>
+                <div>
+                    <input id="done" class="done" >
+                </div>
+
+                <div>
+                    <p id="toDoThing">123</p>
+                </div>
+                <div>
+                    <input id="done" class="done" >
+                </div>
+            </div> -->
+                        
+        </div>
+        <div class="line"></div>
+        <div class="right">
+            <h2 class="title" _msthash="448630" _msttexthash="5529316">转到</h2>
+            <div class="TagPage">
+                <!-- 标签页logo或封面 -->
+                <div class="tag">
+                    <div class="TagBox">
+                        <a href="https://unsplash.com/"><img class="PageIcon" src="https://zengtx.github.io/beginhere01.io-beginhere01/images/unsplush.png" alt="取消闪光" _mstalt="12064598"></a>
+                    </div>
+                    <a class="PageName" href="https://unsplash.com/" _msthash="879333" _msttexthash="6474845">不加分</a>
+                    <!-- <button>…</button> -->
+                </div>
+                <!-- 第二个标签 -->
+                <div class="tag">
+                    <div class="TagBox">
+                        <a href="http://www.ico51.cn/"><img class="PageIcon" src="https://zengtx.github.io/beginhere01.io-beginhere01/images/icon51.png" alt="取消闪光" _mstalt="12064598"></a>
+                    </div>
+                    <a class="PageName" href="https://unsplash.com/" _msthash="879723" _msttexthash="4808765">图标51</a>
+                    <!-- <button>…</button> -->
+                </div>
+
+                <div class="tag">
+                    <div class="TagBox">
+                        <a href="http://www.gcdedu.com/"><img src="./image/LOGO/wit.png" alt="添加标签" class="TagIcon" _mstalt="11987560"></a>
+                        
+                    </div>
+                    <p class="PageName" _msthash="881283" _msttexthash="15368782">Wit</p>
+                </div>
+                <div class="tag">
+                    <div class="TagBox">
+                        <a href="https://zk.hbea.edu.cn/"><img src="./image/LOGO/zikao.png" alt="添加标签" class="TagIcon" _mstalt="11987560"></a>
+                        
+                    </div>
+                    <p class="PageName" _msthash="881283" _msttexthash="15368782">湖北自考</p>
+                </div>
+                <div class="tag">
+                    <div class="TagBox">
+                        <a href="https://www.neea.edu.cn/"><img src="./image/LOGO/quanguo.png" alt="添加标签" class="TagIcon" _mstalt="11987560"></a>
+                        
+                    </div>
+                    <p class="PageName" _msthash="881283" _msttexthash="15368782">教育考试</p>
+                </div>
+                <div class="TagBox">
+                    <a href="/pages/update.html"><img src="https://zengtx.github.io/beginhere01.io-beginhere01/images/addTag.png" alt="添加标签" class="TagIcon" _mstalt="11987560"></a>
+                    <p class="PageName" _msthash="881283" _msttexthash="15368782">功能待更新</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer flex-raw">
+        <a class="margin8" href="https://zengtx.github.io/beginhere01.io-beginhere01/pages/update.html" _msthash="250692" _msttexthash="12019189">更新计划</a>
+        <a class="margin8" href="#" _msthash="250809" _msttexthash="7414849">郑堃逢</a>
+        <a class="margin8" href="" _msthash="250926" _msttexthash="6317012">联系</a>
+    </div>
+    <div id="date" class="date" _msthash="45890" _msttexthash="15626">17613376231</div>
+
    
     
 </body>

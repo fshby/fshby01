@@ -41,3 +41,43 @@ window.onclick = function(event) {
 //     window.location.href="index01.html"
 
 // }
+// function myFunction() {
+//     // 声明变量
+//     var input, filter, ul, li, a, i, txtValue;
+//     input = document.getElementById('myInput');
+//     filter = input.value.toUpperCase();
+//     ul = document.getElementById("myUL");
+//     li = ul.getElementsByTagName('li');
+   
+//     // 循环遍历所有列表项，并隐藏那些与搜索查询不匹配的项
+//     for (i = 0; i < li.length; i++) {
+//       a = li[i].getElementsByTagName("a")[0];
+//       txtValue = a.textContent || a.innerText;
+//       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//         li[i].style.display = "";
+//       } else {
+//         li[i].style.display = "none";
+//       }
+//     }
+//   }
+let myInput=document.getElementById("myInput");
+let i = true;
+myInput.onclick = function(){
+        if(i){
+            window.location.href="https://www.baidu.com/";
+            i = false;
+        }
+    }
+  // 页面加载时显示时间
+let date = document.getElementById('date');
+date.innerHTML = new date();
+
+/*
+function onclick(){
+    let shuRuKuang = document.getElementById('shuRuKuang');
+    if{
+        
+
+    }
+}
+*/
