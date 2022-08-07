@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Trash Galaxy</title>
+    <!-- <link rel="stylesheet" href="text/css" href="index.css"> -->
+</head>
+<style>
+    .xiaoxiback{
+
+        background-image: url(xiaoxiback02.gif);
+        background-size: 700px 700px;
+        
+    }
+    .mg{
+        margin: 4px;
+    }
+    .jianjie{
+        display: flex;
+        max-width: 80%;
+        margin: auto;
+        background-color: #676d89;
+        min-height: 15%;
+        flex-direction: column;
+        align-items: flex-start;
+        flex:1;
+        margin: 0px;
+    }
+    .jianjie01{
+        display: flex;
+        max-width: 100%;
+        margin: auto;
+        min-height: 10%;
+        flex-direction: row;
+        flex:1;
+        margin: 0px;
+       
+        
+
+    }
+    body{
+        margin: auto;
+        overflow: hidden;
+        height:100vh;
+        display: flex;
+        flex-direction:row;
+        justify-items: start;
+        /* border: 8px solid rgb(26, 209, 16); */
+
+        
+    }
+    /* *{
+        border: 2px solid red;
+    } */
+    .flexpiaofu{
+        margin-top: 1px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-self: flex-start;
+        width: 400px;
+        height: 380px;
+        /* border: 1px solid rgb(7, 8, 8); */
+
+    }
+    .column{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .flexpiaofu02{
+        
+        display: flex;
+        margin-right: 300px;
+        padding-right: 200px;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid rgb(35, 214, 127); */
+
+    }
+    .zhanwei{
+              flex:1;
+            display:flex ;flex-direction: row;
+            /* border: 2px solid red; */
+            height: 120px;
+            width: 375px;
+    }
+    .zhanwei01{
+              flex:1;
+            display:flex ;flex-direction: row;
+            /* border: 2px solid red; */
+            height: 60px;
+            width: 375px;
+    }
+    @media(max-width:600px){
+        .shouji{
+            display: none;
+        }
+    }
+    @media(max-height:760px){
+        .shoujise{
+            display: none;
+        }
+    }
+    @media(min-height:780px){
+        .shoujise01{
+            display: none;
+        }
+    }
+</style>
+<body class="xiaoxiback">
+    <!--星球区-->
+    <div style="padding-right: 50px;
+        max-height: 100%;
+        max-width:667px;
+        overflow: hidden;
+        /* border: 6px solid white; */
+        align-self: flex-start;
+        
+        
+        
+        ">
+        <!--星球01-->
+        <div class="flexpiaofu  " 
+        style="margin-top: 8px;">
+                <div clas="flex1" 
+                style="
+                margin-top: 80px;
+                width: 400px;
+                ">
+                <img src="xingqiu01.png" 
+                    width="100%"
+                    height="100%"
+                    id="xingqiu01"
+                    alt="">
+                </div>
+                
+                <!--行星-->
+                
+                <div class="flex" style="margin-left:40px ;
+                margin-top: 50px;
+                width: 500px;">
+                    <img src="xingxing.png" 
+                    width="100%"
+                    height="100%"
+                    id="xingxing"
+                    alt="">
+                    <!--行星05-->
+                    <div class="flex" 
+                    style="margin-top: 10px;margin-right: 60px;width: 20px;">
+                    <img src="xingxing05.png" 
+                        width="100%"
+                        height="100%"
+                        id="xingxing05"
+                        alt="">
+                    </div>
+                    
+                </div>
+                <!--星球02-->
+    
+    
+                <div class="flex1" style="margin-top: 140px;margin-right: 30px;
+                width: 500px;">
+                  <img src="xingqiu02.png" 
+                    width="100%"
+                    height="100%"
+                    id="xingqiu02"
+                    alt="">
+                    <div class="flex" 
+                    style="margin-top: 1px;margin-right: 20px;">
+                    <img src="xingqiu04.png" 
+                        width="100%"
+                        height="100%"
+                        id="xingqiu04"
+                        alt="">
+                    </div>
+                </div>
+                
+                <!--星球03-->
+                <div class="flex1" style="margin-right: 140px;margin-top: 5px;
+                width: 300px;
+                ">
+                    <img src="xingqiu03.png" 
+                    width="100%"
+                    height="100%"
+                    id="xingqiu03"
+                    alt="">
+                </div>
+                
+            </div>   
+            <div class="shoujise zhanwei " >  
+            </div>
+            <div class="shoujise01 zhanwei01 " >  
+            </div>
+            <div class="flexpiaofu02  " >
+                
+                    <div class="flex "
+                    style="margin-left: 3px;
+                    /* margin-bottom: 20px; */
+                    /* border: 6px solid blue; */
+                   ">
+                        <img src="paiofu02.gif" 
+                        width="200px"
+                        height="200px"
+                        id="dog"
+                        alt="">  
+                        
+                    </div>
+        
+                    <div 
+                    style="
+                    display: flex;flex-direction: column;
+                    justify-items: center;"
+                    >
+                    <img src="etet.png" 
+                    width="100px"
+                    height="100px"
+                    style="margin-left:15px ;margin-top: 5px;"
+                    id="t1"
+                    alt="">  
+                    <audio src="beijing .mp3"
+                    style="display: none;"
+                    controls id="bb"></audio>
+                    <img src="logo02.png" 
+                    width="150px"
+                    height="40px"
+                    style="margin-top:20px ;"
+                    
+                    alt="">  
+                    </div>
+            </div>
+            
+            <div  style=" flex:1;
+            display:flex ;flex-direction: row;
+            height: 100px;
+            width: 667px;
+            margin-top: 8px;
+            background-color: rgba(0, 0, 0, 0.847);
+            /* border: 2px solid red; */
+            ">
+                 <img src="./image/gethup.png" 
+                    width="40px"
+                    height="40px"
+                    style="margin-left:44px;
+                    margin-top: 10px;
+                    "
+                    id="t2"
+                    alt="">
+                    <A href="https://github.com/" id="w1"></A>
+                    <A href="https://www.csdn.net/" id="w2"></A>
+                    <A href="https://www.runoob.com/" id="w3"></A>
+                    <A href="https://how2j.cn/" id="w4"></A>
+                 <img src="./image/csdn.png" 
+                    width="40px"
+                    height="40px"
+                    style="margin-left:47px;
+                    margin-top: 10px;
+                    "
+                    id="t3"
+                    alt="">
+                 <img src="./image/runoob.png" 
+                    width="40px"
+                    height="40px"
+                    style="margin-left:47px;
+                    margin-top: 10px;
+                    "
+                    id="t4"
+                    alt="">
+                 <img src="./image/how2j.png" 
+                    width="40px"
+                    height="40px"
+                    style="margin-left:47px;
+                    margin-top: 10px;
+                    "
+                    id="t5"
+                    alt="">
+                  
+            
+            </div>
+               
+       
+            
+            
+        </div>
+       
+    
+        </div>
+
+    </div>
+
+    <div class="jianjie shouji">
+        <div class="jianjie01 mg">
+           
+            <div >
+                <img src="xingqiu01.png" 
+                width="100px"
+                style="margin-top:100px ;"
+                height="100px"
+                  alt="">
+            </div>
+            <div> 
+                <p> <font color="whit" size="8" face="华文楷体">简介：</font></p>                   
+               <p>
+                <font color="whit" size="8" face="华文楷体">
+                海王星：初步探索！<br>
+                生存物种：java星人！<br>
+                </font>  
+                </p> 
+                            
+           
+ 
+                
+
+              
+            </div>
+
+        </div>
+        <div class="jianjie01 mg">
+           
+            <div>
+                <img src="xingqiu01.png" 
+                width="100px"
+                height="100px"
+                  alt="">
+            </div>
+            <div>
+                
+            </div>
+
+        </div>
+        
+
+
+    </div>
+   
+  
+    
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/music.js"></script>
+</html>
