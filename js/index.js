@@ -1,7 +1,7 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     
 } else{
-    window.location.href = "diannaoindex.html"
+    window.location.href = "diannaoindex.html";
 
 }
 let xingqiu01 = document.getElementById ("xingqiu01");
@@ -63,7 +63,7 @@ xingxing.onclick = function(){
 }
 xingxing05.onclick = function(){
     if(w){
-        window.location.href="vscode.html";  
+        window.location.href="diannaoindex.html";  
     }
 }
 xingqiu02.onclick = function(){
