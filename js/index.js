@@ -1,9 +1,4 @@
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    
-} else{
-    window.location.href = "diannaoindex.html";
 
-}
 let xingqiu01 = document.getElementById ("xingqiu01");
 let xingxing = document.getElementById ("xingxing");
 let xingxing05 = document.getElementById ("xingxing05");
@@ -63,7 +58,7 @@ xingxing.onclick = function(){
 }
 xingxing05.onclick = function(){
     if(w){
-        window.location.href="diannaoindex.html";  
+        window.location.href="vscode.html";  
     }
 }
 xingqiu02.onclick = function(){
@@ -73,7 +68,7 @@ xingqiu02.onclick = function(){
 }
 xingqiu04.onclick = function(){
     if(w){
-        window.location.href="js.html";  
+        window.location.href="diannaoindex.html";  
     }
 }
 xingqiu03.onclick = function(){
