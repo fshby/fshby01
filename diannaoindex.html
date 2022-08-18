@@ -9,12 +9,14 @@
     <style>
     body{
         /* 适应屏幕大小 */
-        min-height: 100%;
-        min-width: 100%;
-        margin: auto;
+        /* margin: 0px; */
+        /* max-height: 100%;
+        max-width: 100%; */
+        /* margin: auto; */
         overflow: auto;
         background-image: url(./xiaoxiback01.jpeg);
-        background-size: 1535px 950px;
+        /* background-size: 1600px 800px; */
+        /* background-size: 1535px 950px; */
         flex-direction: column;
         /* 固定背景图片不随鼠标滚动下滑 */
         background-attachment: fixed;
@@ -40,8 +42,9 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-image:url(./image/overlay.jpeg);
-        background-size: 100% 100%;
+        background-image:url(./image/大海2.jpg);
+        background-size: 1600px 800px;
+        
         /* background-color: rgba(0, 0, 0, 0.825);
         background-color: rgba(0, 0, 0, 0.244); */
         overflow-y: hidden;
@@ -94,6 +97,7 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    
 }
 
 /* Set a style for all buttons */
@@ -105,6 +109,7 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 4px 4px 4px 4px ;
 }
 
 button:hover {
@@ -263,10 +268,10 @@ span.psw {
   background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 添加搜索按钮 */
   background-position: 10px 12px; /* 定位搜索按钮 */
   background-repeat: no-repeat; /* 图片不重复 */
-  width: 100%; /* 全屏幕显示 */
+  width: 80%; /* 全屏幕显示 */
   font-size: 16px; /* 字体大小 */
   padding: 12px 20px 12px 40px; /* 设置内边距 */
-  border: 1px solid #ddd; /* 添加灰色边框 */
+  border: 1px solid rgba(221, 221, 221, 0.558); /* 添加灰色边框 */
   margin-bottom: 12px; /* 添加顶部的外边距 */
 }
  
@@ -296,7 +301,7 @@ span.psw {
     display: flex; 
     flex-direction: row;width: 80%;
     min-height: 250px; 
-    background-color: #44516a3e;
+    background-color: #44516a00;
     padding-top: 0px;
     margin-top: 6%;
     margin-left: 10%;
@@ -310,14 +315,15 @@ span.psw {
     /* background-image: url(/images/simon-lee-XX5RQgTuD8o-unsplash.jpg);
     background-repeat :no-repeat; #44516a63
     background-position: center; */
-    border: 2px solid   #44516ab5;
-    background-color:#44516a63#e2def300;
+    border: 2px solid   #44516a48;
+    background-color:#44516abe#e2def300;
     z-index: 1;
     backdrop-filter: blur(30px);
     /* background-color: #fff; */
-    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.137);
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.062);
 }
 /* 标签页 */
+
 .TagBox{
     width: 80px;
     height: 80px;
@@ -419,6 +425,11 @@ a{
     color:#e2def3;
     margin: 16px 0px;
 }
+.tag{
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
 
 .TagPage{
     display: flex;
@@ -426,11 +437,7 @@ a{
     justify-content: flex-start;
 }
 
-.tag{
-    display: flex;
-    flex-direction: column;
-    margin-right: 16px;
-}
+
 
 .TagIcon{
     width: 80px;
@@ -445,7 +452,7 @@ a{
     color: #eee;
     margin: 8px;
     text-align: center;
-}
+} 
 </style>
 </head>
 <body>
@@ -537,7 +544,9 @@ a{
         </div>
       </form>
     </div>
-    <input type="输入要查询的内容" style="width: 600px; margin-left: 120px; color:#000; font-style:normal;"
+    <input type="输入要查询的内容" style="width: 500px; 
+    border-radius: 4px 4px 4px 4px ;
+    margin-left: 120px; color:#000; font-style:normal;"
       placeholder="搜索.."id="myInput">
        <!-- <input class="search" type="输入要查询的内容" value="输入要搜索的内容" name=wd> -->
       <!-- <form action="https://www.baidu.com/s" class="flex">
