@@ -9,7 +9,9 @@
     
     <!-- <link rel="stylesheet" href="text/css" href="index.css"> -->
 </head>
+
 <style>
+    
     .xiaoxiback{
 
         background-image: url(xiaoxiback02.gif);
@@ -114,6 +116,80 @@
             display: none;
         }
     }
+/* steps动画 */
+    #pic {
+  height:90px;
+  width:65;
+  background-position: -40px -44px;
+  background-image: url("https://static.runoob.com/images/mix/space-to-top.png");
+  
+  animation: .6s go steps(7) infinite;
+}
+
+ @keyframes go  {
+   0% {
+      background-position-x: -40px;
+   }
+   100% {
+      background-position-x: -1040px;
+   }
+}
+/* 飞行动画 */
+.etet{                  
+          
+            margin-left:15px ;margin-top: 5px; 
+            position:relative;
+        animation:mymove 5s infinite;
+        -webkit-animation:mymove 5s infinite; /* Safari and Chrome */
+        animation-play-state:paused;
+        -webkit-animation-play-state:paused; /* Safari 和 Chrome */
+
+}
+@keyframes mymove
+{
+	0%   {top:0px; left:0px;  }
+	25%  {top:-500px; left:-100px; width: 40px; height: 40px;}
+	50%  {top:-400px; left:-120px; width: 60px;height: 60px;}
+	75%  {top:-90px; left:-155px; width: 80px;height: 80px;}
+	100% {top:-20px; left:20px; }
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+	0%   {top:0px; left:0px;  }
+	25%  {top:-500px; left:-100px; width: 40px; height: 40px;}
+	50%  {top:-400px; left:-120px; width: 60px;height: 60px;}
+	75%  {top:-90px; left:-155px; width: 80px;height: 80px;}
+	100% {top:-20px; left:20px; }
+}
+/* 星球运转动画 */
+    /* .xingxing{                  
+            
+        
+        animation:mymove1 3s infinite;
+        -webkit-animation:mymove 3s infinite; 
+        animation-play-state:paused;
+        -webkit-animation-play-state:paused; 
+
+    }
+    @keyframes mymove1
+    {
+    0%   {top:0px; left:0px; width: 20px;height:20px; }
+    25%  {top:1px; left:1px; width: 19px; height: 19px;}
+    50%  {top:0px; left:0px; width: 20px;height: 20px;}
+    75%  {top:-1px; left:-1px; width: 21px;height: 21px;}
+    100% {top:-0px; left:0px;width: 20px;height:20px; }
+    }
+
+    @-webkit-keyframes mymove1 
+    {
+        0%   {top:0px; left:0px; width: 20px;height:20px; }
+    25%  {top:1px; left:1px; width: 19px; height: 19px;}
+    50%  {top:0px; left:0px; width: 20px;height: 20px;}
+    75%  {top:-1px; left:-1px; width: 21px;height: 21px;}
+    100% {top:-0px; left:0px;width: 20px;height:20px; }
+    } */
+
 </style>
 <body class="xiaoxiback">
     <!--星球区-->
@@ -144,7 +220,7 @@
                 
                 <!--行星-->
                 
-                <div class="flex" style="margin-left:40px ;
+                <div  class=" xingxing  flex" id="x1" style="margin-left:40px ;
                 margin-top: 50px;
                 width: 500px;">
                     <img src="xingxing.png" 
@@ -153,7 +229,7 @@
                     id="xingxing"
                     alt="">
                     <!--行星05-->
-                    <div class="flex" 
+                    <div i class="flex" 
                     style="margin-top: 10px;margin-right: 60px;width: 20px;">
                     <img src="xingxing05.png" 
                         width="100%"
@@ -219,10 +295,10 @@
                     display: flex;flex-direction: column;
                     justify-items: center;"
                     >
-                    <img src="etet.png" 
+                    <img class="etet" src="etet.png" 
                     width="100px"
                     height="100px"
-                    style="margin-left:15px ;margin-top: 5px;"
+                   
                     id="t1"
                     alt="">  
                     <audio src="beijing .mp3"
