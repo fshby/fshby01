@@ -68,7 +68,7 @@ xingqiu02.onclick = function(){
 }
 xingqiu04.onclick = function(){
     if(w){
-        window.location.href="diannaoindex.html";  
+        window.location.href="https://www.555yy3.com/";  
     }
 }
 xingqiu03.onclick = function(){
